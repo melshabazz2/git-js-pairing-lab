@@ -51,3 +51,18 @@ const multiply = (a, b) => {
 // multiply(3, 7.5)
 
 //Question 6:
+
+const add = (a, b) => {
+    if (a === b) {
+        console.log((a + b) * 3)
+    } else {
+        console.log(a + b)
+    }
+}
+// add(2, 4)
+// add(10, -5)
+// add(3, 7.5)
+// add(5, 5)
+// add(6, 6)
+
+//Question 7:
