@@ -66,3 +66,14 @@ const add = (a, b) => {
 // add(6, 6)
 
 //Question 7:
+
+const isNegative = (n) => {
+    if (n < 0) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(isNegative(3))
+console.log(isNegative(-2))
+console.log(isNegative(Math.PI))
