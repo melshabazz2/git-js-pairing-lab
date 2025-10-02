@@ -89,3 +89,13 @@ const triangleArea = (a, b) => {
 
 //Question 9:
 
+const betweenTwentyAndFourty = (n) => {
+    if (n > 20 && n < 40) {
+        return true
+    } else
+        return false
+}
+console.log(betweenTwentyAndFourty(20))
+console.log(betweenTwentyAndFourty(21))
+console.log(betweenTwentyAndFourty(39))
+console.log(betweenTwentyAndFourty(40))
