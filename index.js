@@ -1,3 +1,6 @@
+// Odd number functions done by : Majeed
+// Even number functions done by : Ashar
+
 //Question 1:
 
 const fiveToOneHundred = () => {
@@ -118,18 +121,19 @@ const largest = (a, b, c) => {
 
 
 
+//Bonus Challenges:
 
+//Question 11
 
+const printTime = () => {
+    const now = new Date()
+    let hours = `${now.getHours()}`.padStart(2, '0')
+    let minutes = `${now.getMinutes()}`.padStart(2, '0')
+    let seconds = `${now.getSeconds()}`.padStart(2, '0')
+    console.log(`${hours}:${minutes}:${seconds}`)
+}
 
-
-
-
-
-
-
-
-
-
+//printTime()
 
 
 
@@ -144,18 +148,20 @@ const isLeapYear = (year) => {
 
 
 
+//Question 13
 
+const getExtention = (fileName) => {
+    const dot = fileName.lastIndexOf('.')
+    if (dot !== -1) {
+        console.log(fileName.substring(dot))
+    } else {
+        console.log('')
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
+getExtention("hello.txt")
+getExtention("app.js")
+getExtention("README.md")
 
 
 
@@ -171,21 +177,23 @@ const absoluteNineteen = (n) => {
 // console.log(absoluteNineteen(25))
 
 
+//Question 15
 
+const switchLetters = (str) => {
+    if (str.length <= 1) {
+        console.log(str)
+    } else {
+        const firstLetter = str[0]
+        const middleLetters = str.slice(1, -1)
+        const lastLetter = str[str.length - 1]
+        console.log(lastLetter + middleLetters + firstLetter)
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// switchLetters('anne')
+// switchLetters('hello world')
+// switchLetters('a')
+// switchLetters('')
 
 
 // Question 16:
@@ -205,3 +213,4 @@ const changeString = (str) => {
         .join('')
 }
 // console.log(changeString("abc"))
+=======
