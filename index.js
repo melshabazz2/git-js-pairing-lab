@@ -74,6 +74,18 @@ const isNegative = (n) => {
         return false
     }
 }
-console.log(isNegative(3))
-console.log(isNegative(-2))
-console.log(isNegative(Math.PI))
+// console.log(isNegative(3))
+// console.log(isNegative(-2))
+// console.log(isNegative(Math.PI))
+
+//Question 8:
+
+const triangleArea = (a, b) => {
+    console.log((a * b) / 2)
+}
+
+// triangleArea(5, 7)
+// triangleArea(6, 8)
+
+//Question 9:
+
