@@ -1,3 +1,6 @@
+// Odd number functions done by : Majeed
+// Even number functions done by : Ashar
+
 //Question 1:
 
 const fiveToOneHundred = () => {
@@ -115,3 +118,4 @@ const largest = (a, b, c) => {
 // largest(4, 6, 8)        
 // largest(30, 22, 17)     
 // largest(41, 108, 86)    
+
