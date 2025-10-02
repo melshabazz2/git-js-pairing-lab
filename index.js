@@ -121,6 +121,8 @@ const largest = (a, b, c) => {
 
 //Bonus Challenges:
 
+//Question 11
+
 const printTime = () => {
     const now = new Date()
     let hours = `${now.getHours()}`.padStart(2, '0')
@@ -129,4 +131,59 @@ const printTime = () => {
     console.log(`${hours}:${minutes}:${seconds}`)
 }
 
-printTime()
+//printTime()
+
+
+
+
+
+
+
+
+
+
+
+
+//Question 13
+
+const getExtention = (fileName) => {
+    const dot = fileName.lastIndexOf('.')
+    if (dot !== -1) {
+        console.log(fileName.substring(dot))
+    } else {
+        console.log('')
+    }
+}
+
+getExtention("hello.txt")
+getExtention("app.js")
+getExtention("README.md")
+
+
+
+
+
+
+
+
+
+
+
+
+//Question 15
+
+const switchLetters = (str) => {
+    if (str.length <= 1) {
+        console.log(str)
+    } else {
+        const firstLetter = str[0]
+        const middleLetters = str.slice(1, -1)
+        const lastLetter = str[str.length - 1]
+        console.log(lastLetter + middleLetters + firstLetter)
+    }
+}
+
+// switchLetters('anne')
+// switchLetters('hello world')
+// switchLetters('a')
+// switchLetters('')
