@@ -119,6 +119,8 @@ const largest = (a, b, c) => {
 // largest(30, 22, 17)     
 // largest(41, 108, 86)    
 
+
+
 //Bonus Challenges:
 
 //Question 11
@@ -135,12 +137,14 @@ const printTime = () => {
 
 
 
-
-
-
-
-
-
+// Question 12:
+const isLeapYear = (year) => {
+    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)
+}
+// console.log(isLeapYear(2000))
+// console.log(isLeapYear(1900))
+// console.log(isLeapYear(2020))
+// console.log(isLeapYear(1999))
 
 
 
@@ -161,13 +165,16 @@ getExtention("README.md")
 
 
 
-
-
-
-
-
-
-
+// Question 14:
+const absoluteNineteen = (n) => {
+    const difference = Math.abs(n - 19)
+    if (n > 19) {
+        return (difference * 3)
+    } else {
+        return difference
+    }
+}
+// console.log(absoluteNineteen(25))
 
 
 //Question 15
@@ -187,3 +194,23 @@ const switchLetters = (str) => {
 // switchLetters('hello world')
 // switchLetters('a')
 // switchLetters('')
+
+
+// Question 16:
+const changeString = (str) => {
+    return str
+        .split('')
+        .map(char => {
+            const charCode = char.charCodeAt(0)
+            if (char === 'z') {
+                return 'a'
+            }
+            if ((charCode >= 97 && charCode <= 122)) {
+                return String.fromCharCode(charCode + 1)
+            }
+            return char
+        })
+        .join('')
+}
+// console.log(changeString("abc"))
+=======
