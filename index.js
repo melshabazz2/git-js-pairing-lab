@@ -119,3 +119,98 @@ const largest = (a, b, c) => {
 // largest(30, 22, 17)     
 // largest(41, 108, 86)    
 
+
+
+//Bonus Challenges:
+
+//Question 11
+
+const printTime = () => {
+    const now = new Date()
+    let hours = `${now.getHours()}`.padStart(2, '0')
+    let minutes = `${now.getMinutes()}`.padStart(2, '0')
+    let seconds = `${now.getSeconds()}`.padStart(2, '0')
+    console.log(`${hours}:${minutes}:${seconds}`)
+}
+
+//printTime()
+
+
+
+// Question 12:
+const isLeapYear = (year) => {
+    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)
+}
+// console.log(isLeapYear(2000))
+// console.log(isLeapYear(1900))
+// console.log(isLeapYear(2020))
+// console.log(isLeapYear(1999))
+
+
+
+//Question 13
+
+const getExtention = (fileName) => {
+    const dot = fileName.lastIndexOf('.')
+    if (dot !== -1) {
+        console.log(fileName.substring(dot))
+    } else {
+        console.log('')
+    }
+}
+
+getExtention("hello.txt")
+getExtention("app.js")
+getExtention("README.md")
+
+
+
+// Question 14:
+const absoluteNineteen = (n) => {
+    const difference = Math.abs(n - 19)
+    if (n > 19) {
+        return (difference * 3)
+    } else {
+        return difference
+    }
+}
+// console.log(absoluteNineteen(25))
+
+
+//Question 15
+
+const switchLetters = (str) => {
+    if (str.length <= 1) {
+        console.log(str)
+    } else {
+        const firstLetter = str[0]
+        const middleLetters = str.slice(1, -1)
+        const lastLetter = str[str.length - 1]
+        console.log(lastLetter + middleLetters + firstLetter)
+    }
+}
+
+// switchLetters('anne')
+// switchLetters('hello world')
+// switchLetters('a')
+// switchLetters('')
+
+
+// Question 16:
+const changeString = (str) => {
+    return str
+        .split('')
+        .map(char => {
+            const charCode = char.charCodeAt(0)
+            if (char === 'z') {
+                return 'a'
+            }
+            if ((charCode >= 97 && charCode <= 122)) {
+                return String.fromCharCode(charCode + 1)
+            }
+            return char
+        })
+        .join('')
+}
+// console.log(changeString("abc"))
+=======
