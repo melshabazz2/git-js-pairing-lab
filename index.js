@@ -95,7 +95,23 @@ const betweenTwentyAndFourty = (n) => {
     } else
         return false
 }
-console.log(betweenTwentyAndFourty(20))
-console.log(betweenTwentyAndFourty(21))
-console.log(betweenTwentyAndFourty(39))
-console.log(betweenTwentyAndFourty(40))
+// console.log(betweenTwentyAndFourty(20))
+// console.log(betweenTwentyAndFourty(21))
+// console.log(betweenTwentyAndFourty(39))
+// console.log(betweenTwentyAndFourty(40))
+
+//Question 10:
+
+const largest = (a, b, c) => {
+    if (a > b && a > c) {
+        console.log(a)
+    } else if (b > a && b > c) {
+        console.log(b)
+    } else if (c > a && c > b) {
+        console.log(c)
+    }
+}
+
+// largest(4, 6, 8)        
+// largest(30, 22, 17)     
+// largest(41, 108, 86)    
