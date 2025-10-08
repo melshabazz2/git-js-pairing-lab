@@ -47,26 +47,26 @@ const untilNum = (n) => {
 //Question 5:
 
 const multiply = (a, b) => {
-    console.log(a * b)
+    return (a * b)
 }
-//multiply(2, 4)
-// multiply(10, -5)
-// multiply(3, 7.5)
+// console.log(multiply(2, 4))
+// console.log(multiply(10, -5))
+// console.log(multiply(3, 7.5))
 
 //Question 6:
 
 const add = (a, b) => {
     if (a === b) {
-        console.log((a + b) * 3)
+        return ((a + b) * 3)
     } else {
-        console.log(a + b)
+        return a + b
     }
 }
-// add(2, 4)
-// add(10, -5)
-// add(3, 7.5)
-// add(5, 5)
-// add(6, 6)
+// console.log(add(2, 4))
+// console.log(add(10, -5))
+// console.log(add(3, 7.5))
+// console.log(add(5, 5))
+// console.log(add(6, 6))
 
 //Question 7:
 
@@ -84,11 +84,11 @@ const isNegative = (n) => {
 //Question 8:
 
 const triangleArea = (a, b) => {
-    console.log((a * b) / 2)
+    return ((a * b) / 2)
 }
 
-// triangleArea(5, 7)
-// triangleArea(6, 8)
+// console.log(triangleArea(5, 7))
+// console.log(triangleArea(6, 8))
 
 //Question 9:
 
@@ -107,17 +107,17 @@ const betweenTwentyAndFourty = (n) => {
 
 const largest = (a, b, c) => {
     if (a > b && a > c) {
-        console.log(a)
+        return a
     } else if (b > a && b > c) {
-        console.log(b)
+        return b
     } else if (c > a && c > b) {
-        console.log(c)
+        return c
     }
 }
 
-// largest(4, 6, 8)        
-// largest(30, 22, 17)     
-// largest(41, 108, 86)    
+// console.log(largest(4, 6, 8))     
+// console.log(largest(30, 22, 17))  
+// console.log(largest(41, 108, 86))   
 
 
 
